@@ -5,7 +5,6 @@
 #pragma once
 #include "PdbHandler.h"
 #include "Config.h"
-#include <comdef.h>
 
 namespace Crash
 {

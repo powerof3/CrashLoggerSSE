@@ -95,23 +95,28 @@
 #include <vector>
 #include <version>
 
-#include <RE/Skyrim.h>
-#include <SKSE/SKSE.h>
-#include <REL/Relocation.h>
-
 #include <ShlObj_core.h>
 #include <Windows.h>
+#include <winternl.h>
 #include <Psapi.h>
+#include <atlbase.h>
+#include <comdef.h>
+#include <dia2.h>
+#include <diacreate.h>
 #include <boost/stacktrace.hpp>
 #include <fmt/format.h>
 #include <frozen/map.h>
 #include <infoware/cpu.hpp>
 #include <infoware/gpu.hpp>
 #include <infoware/system.hpp>
+#include <magic_enum.hpp>
 
 #include <spdlog/sinks/basic_file_sink.h>
 #include <spdlog/sinks/msvc_sink.h>
 
+#include <RE/Skyrim.h>
+#include <SKSE/SKSE.h>
+#include <REL/Relocation.h>
 
 // Compatible declarations with other sample projects.
 #define DLLEXPORT __declspec(dllexport)

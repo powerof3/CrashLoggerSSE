@@ -3,7 +3,6 @@
 #include "Crash/Modules/ModuleHandler.h"
 #include "Crash/PDB/PdbHandler.h"
 #define MAGIC_ENUM_RANGE_MAX 256
-#include <magic_enum.hpp>
 
 namespace Crash::Introspection::SSE
 {
