@@ -130,6 +130,8 @@ namespace Crash
 				util::report_and_fail("failed to find standard log directory"sv);
 			}
 
+			*path /= "CrashLogger";
+
 			const auto time = std::time(nullptr);
 			std::tm localTime{};
 			if (gmtime_s(&localTime, &time) != 0) {
